@@ -1,0 +1,18 @@
+"use strict";
+exports.__esModule = true;
+var NumberCollection_1 = require("./NumberCollection");
+var StringCollection_1 = require("./StringCollection");
+var LinklistCollection_1 = require("./LinklistCollection");
+var number = new NumberCollection_1.NumberCollection([3, 0, -5, 6]);
+number.sort();
+console.log(number.data);
+var string = new StringCollection_1.StringCollection('tomato');
+string.sort();
+console.log(string.data);
+var linkList = new LinklistCollection_1.LinkListCollection();
+linkList.add(-3);
+linkList.add(599);
+linkList.add(-6);
+linkList.add(699);
+linkList.sort();
+linkList.print();
